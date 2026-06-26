@@ -1,0 +1,4 @@
+let n = 5
+let x = n + 10
+let y = x - 3
+return y

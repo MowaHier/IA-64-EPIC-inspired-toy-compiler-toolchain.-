@@ -1,0 +1,19 @@
+// optimized by ia64opt.py
+
+mov r1 = 5
+mov r2 = 0
+;;
+loop_0:
+cmp.eq p6,p7 = r1,0
+;;
+(p6) br.cond end_1
+;;
+add r2 = r2,r1
+sub r1 = r1,1
+;;
+br.cond loop_0
+;;
+end_1:
+mov r8 = r2
+;;
+halt

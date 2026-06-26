@@ -1,0 +1,17 @@
+// Test IA64Flow group commit behavior
+
+mov r1 = 10
+mov r2 = 20
+;;
+
+// Same group:
+// r3 reads old r1 = 10
+// r4 also reads old r1 = 10
+// r1 becomes 11 only after this group commits
+
+add r3 = r1,1
+add r4 = r1,2
+add r1 = r1,1
+;;
+
+halt

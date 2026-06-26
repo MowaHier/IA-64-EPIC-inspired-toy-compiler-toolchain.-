@@ -1,0 +1,11 @@
+// This should fail.
+// Two active instructions write r1 in the same group.
+
+mov r1 = 10
+;;
+
+add r1 = r1,1
+sub r1 = r1,1
+;;
+
+halt

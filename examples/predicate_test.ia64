@@ -1,0 +1,17 @@
+// Predicate if/else test
+// Try changing r1 to 0 or 5.
+
+mov r1 = 5
+;;
+
+cmp.eq p6,p7 = r1,0
+;;
+
+// p6 and p7 are complementary.
+// Only one of these two writes should actually happen.
+
+(p6) mov r8 = 100
+(p7) mov r8 = 200
+;;
+
+halt
