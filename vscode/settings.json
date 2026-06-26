@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "*.ia64": "asm",
+        "*.flow": "plaintext"
+    }
+}
