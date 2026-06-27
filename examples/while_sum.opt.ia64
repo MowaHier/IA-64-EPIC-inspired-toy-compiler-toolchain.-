@@ -1,4 +1,4 @@
-// optimized by ia64opt.py
+// optimized by ia64flow.optimizer
 
 mov r1 = 5
 mov r2 = 0

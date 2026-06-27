@@ -1,0 +1,24 @@
+// General demo:
+// Process 8 simple jobs.
+//
+// Each job:
+// - completed += 1
+// - total_cost += cost
+// - cost += 2
+// - jobs -= 1
+//
+// Expected total_cost:
+// 3 + 5 + 7 + 9 + 11 + 13 + 15 + 17 = 80
+
+let jobs = 8
+let completed = 0
+let total_cost = 0
+let cost = 3
+
+while jobs != 0:
+    completed = completed + 1
+    total_cost = total_cost + cost
+    cost = cost + 2
+    jobs = jobs - 1
+
+return total_cost
